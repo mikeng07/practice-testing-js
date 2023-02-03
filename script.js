@@ -100,6 +100,7 @@ class Player{
     addPoint(){
 
         this.point += 1; 
+        return this;
     }
     showPoint(){
 
@@ -143,11 +144,6 @@ deck.addCard();
 deck.shuffleCard();
 
 
-//check the deck 
-// console.log(deck.cards.length);
-// console.log (deck.cards[0]);
-// console.log (deck.cards[1]);
-// console.log (deck.cards[2]);
 
 
 
@@ -164,8 +160,7 @@ for (let i = 0 ; i <52 ; i++)
     }
 }
 
-// console.log(game.players[0].cards.length);
-// console.log(game.players[0].cards[0]);
+
 var show_Card = "";
 var show_suit = "";
 //play the game
